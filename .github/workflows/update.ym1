@@ -1,6 +1,6 @@
 name: Update market data
 
-on:
+'on':
   workflow_dispatch:
   schedule:
     - cron: '15 * * * 1-5'
