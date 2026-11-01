@@ -1,0 +1,33 @@
+{
+  "updated_kst": "2026-11-01 13:50",
+  "metrics": {
+    "nasdaq": {
+      "value": "25,437.00",
+      "note": "전일 대비 -2.86% · Yahoo Finance"
+    },
+    "vix": {
+      "value": "19.42",
+      "note": "전일 대비 +12.91% · Yahoo Finance"
+    },
+    "sp500": {
+      "value": "7,580.07",
+      "note": "전일 대비 -1.82% · Yahoo Finance"
+    },
+    "us10y": {
+      "value": "4.93%",
+      "note": "전일 대비 -1.20% · Yahoo Finance"
+    },
+    "ema20": {
+      "value": "26,444.49",
+      "note": "종가 대비 -3.81% · 나스닥 20일 EMA"
+    },
+    "oscillator": {
+      "value": "-108.61",
+      "note": "MACD(12,26,9) 히스토그램 · 나스닥"
+    },
+    "rsi14": {
+      "value": "34.74",
+      "note": "70 이상 과매수 / 30 이하 과매도"
+    }
+  }
+}
