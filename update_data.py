@@ -27,8 +27,26 @@ if n is not None and len(n)>=35:
     e12=n.ewm(span=12,adjust=False).mean();e26=n.ewm(span=26,adjust=False).mean();macd=e12-e26;signal=macd.ewm(span=9,adjust=False).mean();add('oscillator',(macd-signal).iloc[-1],'MACD(12,26,9) 히스토그램 · 나스닥')
     delta=n.diff();gain=delta.clip(lower=0).ewm(alpha=1/14,adjust=False).mean();loss=(-delta.clip(upper=0)).ewm(alpha=1/14,adjust=False).mean();rs=gain.iloc[-1]/loss.iloc[-1] if loss.iloc[-1] else np.inf;rsi=100-100/(1+rs);add('rsi14',rsi,'70 이상 과매수 / 30 이하 과매도')
 try:
-    u='https://production.dataviz.cnn.io/index/fearandgreed/graphdata'
-    r=requests.get(u,headers={'User-Agent':'Mozilla/5.0','Referer':'https://edition.cnn.com/'},timeout=15);r.raise_for_status();f=r.json().get('fear_and_greed',{});score=f.get('score');rating=f.get('rating','');add('fear_greed',score,f'{rating} · CNN (접근 가능 시)',digits=0)
-except Exception as e:print('CNN unavailable:',e)
-now=datetime.datetime.now(zoneinfo.ZoneInfo('Asia/Seoul'))
+    u = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+
+    headers = {
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "application/json",
+        "Referer": "https://edition.cnn.com/"
+    }
+
+    r = requests.get(u, headers=headers, timeout=20)
+    r.raise_for_status()
+
+    f = r.json().get("fear_and_greed", {})
+
+    add(
+        "fear_greed",
+        f.get("score"),
+        f.get("rating")
+    )
+
+except Exception as e:
+    print("CNN unavailable:", e)
+    now=datetime.datetime.now(zoneinfo.ZoneInfo('Asia/Seoul'))
 with open('data.json','w',encoding='utf-8') as f:json.dump({'updated_kst':now.strftime('%Y-%m-%d %H:%M'),'metrics':metrics},f,ensure_ascii=False,indent=2)
