@@ -1,8 +1,8 @@
 {
-  "updated_kst": "2026-11-03 13:57",
+  "updated_kst": "2026-11-03 14:57",
   "metrics": {
     "nasdaq": {
-      "value": "25,164.36",
+      "value": "25,164.31",
       "note": "전일 대비 -1.07% · Yahoo Finance"
     },
     "vix": {
@@ -18,11 +18,11 @@
       "note": "전일 대비 -0.71% · Yahoo Finance"
     },
     "ema20": {
-      "value": "26,322.58",
+      "value": "26,322.57",
       "note": "종가 대비 -4.40% · 나스닥 20일 EMA"
     },
     "oscillator": {
-      "value": "-146.39",
+      "value": "-146.40",
       "note": "MACD(12,26,9) 히스토그램 · 나스닥"
     },
     "rsi14": {
