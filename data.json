@@ -1,21 +1,21 @@
 {
-  "updated_kst": "2026-11-06 22:06",
+  "updated_kst": "2026-11-06 23:20",
   "metrics": {
     "nasdaq": {
       "value": "24,315.00",
       "note": "전일 대비 -5.52% · Yahoo Finance"
     },
     "vix": {
-      "value": "27.41",
-      "note": "전일 대비 -2.73% · Yahoo Finance"
+      "value": "26.70",
+      "note": "전일 대비 -5.25% · Yahoo Finance"
     },
     "sp500": {
       "value": "7,353.73",
       "note": "전일 대비 -4.36% · Yahoo Finance"
     },
     "us10y": {
-      "value": "4.84%",
-      "note": "전일 대비 -1.16% · Yahoo Finance"
+      "value": "4.87%",
+      "note": "전일 대비 +0.64% · Yahoo Finance"
     },
     "ema20": {
       "value": "26,006.77",
