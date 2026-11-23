@@ -1,32 +1,32 @@
 {
-  "updated_kst": "2026-11-24 05:56",
+  "updated_kst": "2026-11-24 06:56",
   "metrics": {
     "nasdaq": {
-      "value": "24,070.65",
-      "note": "전일 대비 +6.42% · Yahoo Finance"
+      "value": "24,089.56",
+      "note": "전일 대비 +6.51% · Yahoo Finance"
     },
     "vix": {
-      "value": "26.65",
-      "note": "전일 대비 -25.75% · Yahoo Finance"
+      "value": "26.62",
+      "note": "전일 대비 -25.83% · Yahoo Finance"
     },
     "sp500": {
-      "value": "7,238.95",
-      "note": "전일 대비 +4.75% · Yahoo Finance"
+      "value": "7,237.17",
+      "note": "전일 대비 +4.73% · Yahoo Finance"
     },
     "us10y": {
       "value": "4.92%",
       "note": "전일 대비 +0.12% · Yahoo Finance"
     },
     "ema20": {
-      "value": "24,852.83",
-      "note": "종가 대비 -3.15% · 나스닥 20일 EMA"
+      "value": "24,854.63",
+      "note": "종가 대비 -3.08% · 나스닥 20일 EMA"
     },
     "oscillator": {
-      "value": "-134.96",
+      "value": "-133.75",
       "note": "MACD(12,26,9) 히스토그램 · 나스닥"
     },
     "rsi14": {
-      "value": "41.59",
+      "value": "41.75",
       "note": "70 이상 과매수 / 30 이하 과매도"
     }
   }
