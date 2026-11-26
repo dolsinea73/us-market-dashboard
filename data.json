@@ -1,13 +1,13 @@
 {
-  "updated_kst": "2026-11-27 01:10",
+  "updated_kst": "2026-11-27 02:14",
   "metrics": {
     "nasdaq": {
       "value": "23,585.80",
       "note": "전일 대비 -0.62% · Yahoo Finance"
     },
     "vix": {
-      "value": "26.68",
-      "note": "전일 대비 -5.69% · Yahoo Finance"
+      "value": "26.80",
+      "note": "전일 대비 -5.27% · Yahoo Finance"
     },
     "sp500": {
       "value": "7,182.78",
